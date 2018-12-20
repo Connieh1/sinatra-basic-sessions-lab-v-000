@@ -14,7 +14,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     
-    @item = Item.new(params['item'])
+    @item = Item.new(item)
 
     @items = Item.all
 
