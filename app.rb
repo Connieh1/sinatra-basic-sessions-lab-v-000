@@ -12,4 +12,9 @@ class App < Sinatra::Base
     erb :index
   end
 
+  get '/checkout' do
+
+    erb :index
+  end
+
 end
