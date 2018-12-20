@@ -22,7 +22,7 @@ class App < Sinatra::Base
     @items = Item.all
 
     @session = session(params[:item])
-    
+
     erb :checkout
   end
 
