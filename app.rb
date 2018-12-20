@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   get '/checkout' do
-
+    @item = Item.new(params['item'])
     erb :index
   end
 
