@@ -19,7 +19,7 @@ class App < Sinatra::Base
 
     @items = Item.all
 
-    session['name'] = 'socks'
+    session['item'] = 'socks'
     @session = session
 
     erb :checkout
