@@ -21,6 +21,7 @@ class App < Sinatra::Base
 
     @items = Item.all
 
+    @session = session
     erb :checkout
   end
 
